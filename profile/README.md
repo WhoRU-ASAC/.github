@@ -1,12 +1,104 @@
-## Hi there 👋
+## 팀 소개
 
-<!--
+백엔드 5명, 프론트엔드 1명(+백엔드 1명과 같이 진행)
 
-**Here are some ideas to get you started:**
+## 멤버 소개
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+저희 팀은 프론트엔드 개발자 1명과 백엔드 개발자 4명 그리고 풀스택 개발자 1분으로 구성되어 있습니다.
+
+## 프로젝트 소개
+
+### 기획의도
+
+---
+
+저희 프로젝트는 **토이 프로젝트를 기획 및 계획 중인 개발자들이 원활한 커뮤니케이션**을 시작하는 방법이 무엇일까 하는 고민에서 시작했습니다.
+
+새롭게 모인 팀원들 간의 유대감을 형성하고, 팀워크를 강화할 수 있는 방안을 고민했습니다. (일반적으로) 개성이 강하고 커뮤니케이션 기술이 요구되는 개발자들이 부담 없이 시도해볼 만한 서비스가 무엇일지 고민해보았습니다. 말주변이 없어도 부담없이 가볍게 즐길 수 있는 게임들을 생각해보던 중 첫인상 퀴즈를 구현해보기로 했습니다. 이 서비스는 팀원들이 서로를 자연스럽게 알아가고, 편안한 분위기에서 협력할 수 있도록 도와줄 것입니다. 
+
+해당 프로젝트에서는 실시간 상호작용을 가능하게 하는 **WebSocket** 기능을 구현하여 더욱 생생하고 즉각적인 서비스를 지원하고자 합니다. 평소 사용해보고 싶었던 **WebSocket** 기술을 통해 팀원들이 실시간으로 상호작용하며 유대감을 형성할 수 있는 경험을 제공하려 합니다.
+
+### 주요 기능
+
+---
+
+- **공통 진행**
+    - 퀴즈를 통해 자연스럽게 대화 주제를 제공하고, 서로의 성향과 관심사를 파악할 수 있습니다.
+- **실시간 결과 공유**
+    - 퀴즈 결과는 실시간으로 공유되어, 모든 팀원들이 결과를 확인할 수 있습니다.
+    - 결과를 바탕으로 채팅을 유도하여 팀원들 간 자연스러운 대화를 유도합니다.
+- **익명성 보장**
+    - 응답은 익명으로 처리되어, 팀원들이 부담 없이 솔직하게 답할 수 있습니다.
+    - 익명성을 통해 솔직한 답변을 유도하고, 게임의 재미를 더합니다.
+- **게임 설명**
+    - **첫인상 퀴즈**
+        - 처음 만난 사람들끼리 서로 관찰한 다음 상대방에게 느끼는 **첫인상**에 대해 채팅으로 대화를 나눕니다.
+        - 오로지 **첫인상**을 근거로 질문과 가장 유사하다고 판단되는 팀원에게 투표합니다.
+    
+
+### 개발 환경
+
+---
+
+- **FE**
+    - React(Vite)
+    - Stomp JS, SockJS
+    - Tailwind CSS
+- **BE**
+    - Spring Boot
+    - Spring Data JPA
+    - MySQL
+    - WebSocket
+- **협업 툴**
+    - Notion
+    - Github
+    - Figma
+
+## 스토리보드
+
+### UI 및 기능 구체적 설명
+
+---
+
+![시작화면](https://github.com/user-attachments/assets/e79d22c7-0e87-421c-817a-7b79f7d8af88)
+
+시작화면
+
+![이름입력화면](https://github.com/user-attachments/assets/0106aaa4-5cac-45ed-a50d-c325f761a0c3)
+
+이름 입력 화면
+
+![게임참가리스트](https://github.com/user-attachments/assets/1671c1ce-e0b1-4cc8-9ac7-1a5b8863f4cb)
+
+
+게임 참가 리스트 (max: 6)
+
+![첫인상게임중](https://github.com/user-attachments/assets/a7a6e4ba-76f8-46bc-991c-e043342f0738)
+
+
+첫인상 게임 중
+
+![결과화면](https://github.com/user-attachments/assets/56fc40ee-7dc6-471f-81cc-5c3b43e3ac07)
+
+
+결과 화면
+
+### 시연
+
+---
+
+…😘
+
+### 어려웠던 점
+
+---
+
+프로젝트 시작 전에 어느 정도 기획을 구성해놓았음에도 불구하고, 실제 프로젝트 진행 중에 예상보다 많은 시간이 기획에 할애되었습니다. 프로젝트의 절반 이상을 기획에 투자해야 할 만큼, 세부적인 부분에서 많은 고민과 수정이 필요했습니다. 이는 팀원들 간의 다양한 의견을 조율하고, 가장 효과적인 방안을 도출하는 과정에서 발생한 어려움이었습니다. 결과적으로, 초기 기획의 중요성을 다시 한번 깨닫게 되었고, 철저한 준비와 이성적인 현실판단의 중요성을 경험했습니다.
+
+### 개선 사항
+
+---
+
+여러 기능을 구현하고자 하는 욕심에 방향성을 잡지 못했습니다. 확실하게 구현할 기능을 명확하게 선정하는 것이 중요할 것 같습니다. 
+
+또한, API 설계 당시 명확한 request와 response를 상세하게 기술하지 않아 제출까지 얼마 남지 않은 시간에 문제가 발생했습니다. 프로젝트 초기 단계에 API 명세서를 작성할 때 신중히 고려해서 작성해야겠다는 점을 알게 되었습니다.
